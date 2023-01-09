@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "flaticon_ecommerce";
+  src: url("../fonts/flaticon_ecommerce.ttf?8a177763c22ad28aca876199aeceb5af") format("truetype"),
+   url("../fonts/flaticon_ecommerce.woff?8a177763c22ad28aca876199aeceb5af") format("woff"), 
+   url("../fonts/flaticon_ecommerce.woff2?8a177763c22ad28aca876199aeceb5af") format("woff2"), 
+   url("../fonts/flaticon_ecommerce.eot?8a177763c22ad28aca876199aeceb5af#iefix") format("embedded-opentype"),
+    url("../fonts/flaticon_ecommerce.svg?8a177763c22ad28aca876199aeceb5af#flaticon_ecommerce") format("svg");
+}
+
+i[class^=flaticon-]:before,
+i[class*=" flaticon-"]:before {
+  font-family: flaticon_ecommerce !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-down:before {
+  content: "\f101";
+}
+
+.flaticon-search:before {
+  content: "\f102";
+}
+
+.flaticon-heart:before {
+  content: "\f103";
+}
+
+.flaticon-user-profile:before {
+  content: "\f104";
+}
+
+.flaticon-right-and-left:before {
+  content: "\f105";
+}
+
+.flaticon-refresh:before {
+  content: "\f106";
+}
+
+.flaticon-add-to-cart:before {
+  content: "\f107";
+}
+
+.flaticon-star:before {
+  content: "\f108";
+}
+
+.flaticon-eye:before {
+  content: "\f109";
+}
+
+.flaticon-arrow-point-to-right:before {
+  content: "\f10a";
+}
+
+.flaticon-right-arrow:before {
+  content: "\f10b";
+}
+
+.flaticon-left-arrow:before {
+  content: "\f10c";
+}
+
+.flaticon-left-arrow-1:before {
+  content: "\f10d";
+}
+
+.flaticon-pin:before {
+  content: "\f10e";
+}
+
+.flaticon-mail:before {
+  content: "\f10f";
+}
+
+.flaticon-phone:before {
+  content: "\f110";
+}
+
+.flaticon-facebook-app-symbol:before {
+  content: "\f111";
+}
+
+.flaticon-twitter:before {
+  content: "\f112";
+}
+
+.flaticon-instagram:before {
+  content: "\f113";
+}
+
+.flaticon-linkedin:before {
+  content: "\f114";
+}
+
+/*# sourceMappingURL=flaticon_ecommerce.css.map */

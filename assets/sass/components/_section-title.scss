@@ -1,0 +1,43 @@
+.wpo-section-title {
+	margin-bottom: 60px;
+	
+	@include media-query(767px) {
+		margin-bottom: 40px;
+	}
+
+	span{
+		text-transform: uppercase;
+		font-size: 20px;
+		color: $theme-primary-color;
+		font-family: $heading-font;
+	}
+
+	h2 {
+		font-weight: 400;
+		font-size: 40px;
+		line-height: 51px;
+		margin: 0;
+		margin-top: 15px;
+		position: relative;
+		text-transform: capitalize;
+		font-family: $heading-font;
+		margin-top: 0;
+
+
+
+		@include media-query(767px) {
+			font-size: 32px;
+			line-height: 40px;
+		}
+
+		@include media-query(330px) {
+			font-size: 30px;
+		}
+
+	}
+
+	p{
+		font-size: 18px;
+	}
+
+}
