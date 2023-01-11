@@ -2,7 +2,6 @@
 
     "use strict";
 
-
     /*------------------------------------------
         = ALL ESSENTIAL FUNCTIONS
     -------------------------------------------*/
@@ -300,6 +299,26 @@
             wrapCSS: "project-fancybox-title-style"
         });
     }
+
+    /*--------------------------------------------------------
+    / 11. Price Slider
+    /----------------------------------------------------------*/
+    var $anSelect = $('.anSelect select'), 
+        $sliderRange = $('#sliderRange');
+
+    if ($sliderRange.length > 0) {
+        $sliderRange.slider({
+            range: true,
+            min: 0,
+            max: 10000,
+            values: [500, 10000],
+            slide: function (event, ui) {
+                $("#amount").html("$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ]);
+            }
+        });
+        $("#amount").html("$" + $sliderRange.slider("values", 0) + " - $" + $sliderRange.slider("values", 1));
+    }
+
 
 
     /*------------------------------------------

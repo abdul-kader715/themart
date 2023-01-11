@@ -1065,6 +1065,9 @@
         .shop-btn {
             padding-bottom: 40px;
 
+            @media (max-width:1399px) {
+                padding-bottom: 30px;
+            }
             @media (max-width:1199px) {
                 padding-bottom: 25px;
             }
@@ -1078,6 +1081,9 @@
                 color: $text-light-color;
                 border: 1px solid #B9B9B9;
 
+                @media (max-width:1399px) {
+                    padding: 15px 50px;
+                }
                 @media (max-width:1199px) {
                     padding: 15px 35px;
                 }
@@ -1311,13 +1317,18 @@
 
         .price {
             padding-top: 13px;
-
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 28px;
+          
             @media (max-width:1399px) {
                 padding-top: 8px;
             }
 
             @media (max-width:1199px) {
                 padding-top: 5px;
+                font-size: 17px;
+                line-height: 25px;
             }
 
             @media (max-width:575px) {
@@ -1326,15 +1337,7 @@
 
             .old-price,
             .present-price {
-                font-weight: 700;
-                font-size: 20px;
-                line-height: 28px;
                 color: #A5A5A5;
-
-                @media (max-width:1199px) {
-                    font-size: 17px;
-                    line-height: 25px;
-                }
             }
 
             .present-price {

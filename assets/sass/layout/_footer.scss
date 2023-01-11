@@ -2,7 +2,7 @@
 4. wpo-footer
 --------------------------------------------------------------*/
 .wpo-site-footer {
-    background:#233D50;
+    background: #233D50;
     ;
     position: relative;
     font-size: 15px;
@@ -26,7 +26,9 @@
     }
 
     .wpo-upper-footer {
-        padding: 70px 0;
+        padding: 90px 0;
+        padding-bottom: 70px;
+
     }
 
     @media (max-width: 991px) {
@@ -79,6 +81,7 @@
             font-family: $heading-font;
             font-weight: 400;
             font-size: 34px;
+
             @media (max-width: 1399px) {
                 font-size: 29px;
             }
@@ -133,8 +136,9 @@
                         color: $white;
                         background: $theme-primary-color;
                     }
-                    i{
-                        &::before{
+
+                    i {
+                        &::before {
                             font-size: 15px;
                         }
                     }
