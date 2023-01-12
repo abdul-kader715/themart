@@ -157,6 +157,89 @@
         return new bootstrap.Tooltip(tooltipTriggerEl)
     })
 
+    // imageZoom effect
+    $('.product-active .item').zoom();
+
+    // Single gallery slider
+    function productGallary() {
+        if ($('.product-active').length && $('.product-thumbnil-active').length) {
+
+            var $sync1 = $(".product-active"),
+                $sync2 = $(".product-thumbnil-active"),
+                flag = false,
+                duration = 500;
+
+            $sync1
+                .owlCarousel({
+                    items: 1,
+                    margin: 0,
+                    nav: false,
+                    dots: false
+                })
+                .on('changed.owl.carousel', function (e) {
+                    if (!flag) {
+                        flag = true;
+                        $sync2.trigger('to.owl.carousel', [e.item.index, duration, true]);
+                        flag = false;
+                    }
+                });
+
+            $sync2
+                .owlCarousel({
+                    margin: 10,
+                    items: 4,
+                    nav: true,
+                    dots: false,
+                    navText: ['<i class="fa fa-angle-double-left"></i>', '<i class="fa fa-angle-double-right"></i>'],
+                    center: false,
+                    responsive: {
+                        0: {
+                            items: 2,
+                            autoWidth: false
+                        },
+                        400: {
+                            items: 2,
+                            autoWidth: false
+                        },
+                        500: {
+                            items: 2,
+                            center: false,
+                            autoWidth: false
+                        },
+                        600: {
+                            items: 3,
+                            autoWidth: false
+                        },
+                        1200: {
+                            items: 4,
+                            autoWidth: false
+                        }
+                    },
+                })
+                .on('click', '.owl-item', function () {
+                    $sync1.trigger('to.owl.carousel', [$(this).index(), duration, true]);
+
+                })
+                .on('changed.owl.carousel', function (e) {
+                    if (!flag) {
+                        flag = true;
+                        $sync1.trigger('to.owl.carousel', [e.item.index, duration, true]);
+                        flag = false;
+                    }
+                });
+
+        };
+    }
+    productGallary();
+
+    // tooltips
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+
+
     /*------------------------------------------
         = TEAM SECTION
     -------------------------------------------*/
