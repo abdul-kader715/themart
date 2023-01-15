@@ -544,9 +544,11 @@ ul li {
 
                 li>div {
                     padding: 35px;
+                    padding-left: 0;
 
                     @include media-query(991px) {
                         padding: 35px 25px;
+                        padding-left: 0;
                     }
                 }
 
@@ -555,7 +557,7 @@ ul li {
                     padding-left: 0;
 
                     ul {
-                        padding-left: 70px;
+                        padding-left: 115px;
                         list-style-type: none;
                     }
 
@@ -582,7 +584,7 @@ ul li {
 
                 .comment-theme {
                     position: absolute;
-                    left: 35px;
+                    left: 0;
 
                     @include media-query(767px) {
                         position: static;
@@ -594,10 +596,10 @@ ul li {
                 }
 
                 .comment-main-area {
-                    padding-left: 100px;
+                    padding-left: 135px;
 
                     @include media-query(767px) {
-                        padding-left: 0;
+                        padding-left: 35px;
                         margin-top: 25px;
                     }
 
@@ -606,7 +608,7 @@ ul li {
                         font-weight: 400;
                         line-height: 30px;
                         color: $text-light-color;
-                        padding-right: 144px;
+                        // padding-right: 144px;
 
                         @media (max-width:991px) {
                             padding-right: 0px;
@@ -617,12 +619,25 @@ ul li {
                 }
 
                 .children {
+                    position: relative;
+
+                    .line-shape {
+                        position: absolute;
+                        left: 50px;
+                        top: -172px;
+                        z-index: -1;
+
+                        @include media-query(767px) {
+                            display: none;
+                        }
+                    }
+
                     @include media-query(767px) {
                         padding-left: 20px;
                     }
 
                     p {
-                        padding-right: 125px;
+                        // padding-right: 125px;
 
                         @media (max-width:991px) {
                             padding-right: 0px;
@@ -704,7 +719,7 @@ ul li {
                         background-clip: text;
                         transform: all .3s ease-in-out;
                     }
-                   
+
                 }
             }
 
@@ -799,4 +814,191 @@ ul li {
 
 .Additional-wrap {
     padding-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/*** review form ***/
+
+.review-form {
+    margin-top: 45px;
+
+    h4 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    p {
+        margin-bottom: 1.73em;
+
+    }
+
+    .give-rat-sec {
+        margin-bottom: 10px;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    .give-rating {
+        display: inline-block;
+        position: relative;
+        height: 50px;
+        line-height: 50px;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .give-rating label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    .give-rating label:last-child {
+        position: static;
+    }
+
+    .give-rating label:nth-child(1) {
+        z-index: 5;
+    }
+
+    .give-rating label:nth-child(2) {
+        z-index: 4;
+    }
+
+    .give-rating label:nth-child(3) {
+        z-index: 3;
+    }
+
+    .give-rating label:nth-child(4) {
+        z-index: 2;
+    }
+
+    .give-rating label:nth-child(5) {
+        z-index: 1;
+    }
+
+    .give-rating label input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+
+    .give-rating label .icon {
+        float: left;
+        color: transparent;
+    }
+
+    .give-rating label:last-child .icon {
+        color: #ddd;
+    }
+
+    .give-rating:not(:hover) label input:checked~.icon,
+    .give-rating:hover label:hover input~.icon {
+        color: #FFD400;
+    }
+
+    .give-rating label input:focus:not(:checked)~.icon:last-child {
+        color: #ddd;
+        text-shadow: 0 0 5px #FFD400;
+    }
+
+    form {
+
+        input,
+        textarea {
+            background: transparent;
+            border-radius: 0;
+            box-shadow: none;
+            height: 50px;
+            border: 1px solid #efefef;
+            border-radius: 10px;
+        }
+
+        input:focus,
+        textarea:focus {
+            box-shadow: none;
+            outline: none;
+        }
+
+        textarea {
+            height: 130px;
+        }
+
+        >div {
+            margin-bottom: 27px;
+        }
+
+        >div:last-child {
+            margin-bottom: 0;
+        }
+        .name-input{
+            width: 49%;
+            display: inline-block;
+            @media (max-width:767px) {
+                margin-left:0;   
+                width: 100%;
+            }
+        }
+        .name-email{
+            width: 49%;
+            display: inline-block;
+            margin-left: 15px;
+            @media (max-width:1199px) {
+                margin-left: 13px;   
+            }
+            @media (max-width:991px) {
+                margin-left: 9px;   
+            }
+            @media (max-width:767px) {
+                margin-left:0;   
+                width: 100%;
+            }
+        }
+
+        .theme-btn-s2 {
+            background-color: transparent;
+            color: $white;
+            outline: 0;
+            box-shadow: none;
+            border: 0px;
+            &::before{
+                background: linear-gradient(180deg, #95CD2F 0%, #63911F 100%);
+            }
+            &:hover {
+                background-color: $theme-primary-color;
+            }
+
+        }
+    }
+}
+
+
+.slider-nav .slick-slide:focus {
+    outline: none;
+}
+
+
+
+.rating-wrapper {
+    .theme-btn-s2 {
+        background: $theme-primary-color;
+        color: $white;
+
+        &:hover {
+            background: darken($theme-primary-color, 6%);
+        }
+    }
 }
