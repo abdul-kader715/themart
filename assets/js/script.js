@@ -137,6 +137,10 @@
         $('#open4').slideToggle();
         $('.caupon-wrap.s3').toggleClass('coupon-2')
     })
+    // toggle5
+    $('#toggle5').on("click", function () {
+        $('.caupon-wrap').toggleClass('coupon-3')
+    })
 
     $('.payment-select .addToggle').on('click', function () {
         $('.payment-name').addClass('active')
