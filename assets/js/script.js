@@ -123,23 +123,25 @@
 
     // toggle2
     $('#toggle2').on("click", function () {
-        $('#open2').slideToggle();
-        $('.caupon-wrap.s2').toggleClass('coupon-2')
+        $('.create-account1').slideToggle();
+        $('.caupon-wrap.s2').toggleClass('active-border')
     })
 
     // toggle3
     $('#toggle3').on("click", function () {
         $('#open3').slideToggle();
-        $('.caupon-wrap.s2').toggleClass('coupon-2')
+        $('.caupon-wrap.s3').toggleClass('coupon-3')
+    })
+
+    // toggle4
+    $('#toggle4').on("click", function () {
+        $('#open4').slideToggle();
+        $('.caupon-wrap.s4').toggleClass('coupon-4')
     })
     // toggle4
     $('#toggle4').on("click", function () {
         $('#open4').slideToggle();
         $('.caupon-wrap.s3').toggleClass('coupon-2')
-    })
-    // toggle5
-    $('#toggle5').on("click", function () {
-        $('.caupon-wrap').toggleClass('coupon-3')
     })
 
     $('.payment-select .addToggle').on('click', function () {
@@ -655,6 +657,14 @@
         });
     }
 
+
+   /*  $(".calculate-toggle").on("click", function () {
+        $(".calculate-open-toggle").slideToggle(1000);
+    }); */
+
+
+ 
+  
 
 
     /*------------------------------------------

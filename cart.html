@@ -286,7 +286,7 @@
                                             <ul class="sub-menu">
                                                 <li><a href="product.html">Shop</a></li>
                                                 <li><a href="product-single.html">Shop Single</a></li>
-                                                <li><a href="Wishlist.html">wishlist</a></li>
+                                                <li><a href="wishlist.html">Wishlist</a></li>
                                                 <li><a class="active" href="cart.html">Cart</a></li>
                                                 <li><a href="checkout.html">Checkout</a></li>
                                             </ul>
@@ -355,6 +355,7 @@
 
         <!-- start wpo-page-title -->
         <section class="wpo-page-title">
+            <h2 class="d-none">Hide</h2>
             <div class="container">
                 <div class="row">
                     <div class="col col-xs-12">
@@ -526,13 +527,27 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="calculate-menu" id="toggle5">
+                                <div class="calculate-menu calculate-toggle">
                                     <span>Calculate Shipping</span> <i class="fi flaticon-down"></i>
-                                    <div class="calculate-item caupon-wrap" >
+                                    <div class="calculate-item calculate-open-toggle">
                                         <form action="#">
-                                            <button class="country-name">
+                                            <div class="country-name">
                                                 <span>United Kingdom (UK)</span> <i class="fi flaticon-down"></i>
-                                            </button>
+                                                <div class="country-item">
+                                                    <div class="country-search">
+                                                        <input type="text" class="form-control" placeholder="Search" name="search">
+                                                        <button type="submit"><i class="fi flaticon-search"></i></button>
+                                                    </div>
+                                                    <select name="" id="">
+                                                        <option value="1">United Arab Emirates</option>
+                                                        <option value="2">United Kingdom (UK)</option>
+                                                        <option value="3">Ukraine</option>
+                                                        <option value="4">United States (US)</option>
+                                                        <option value="5">Uzbekistan</option>
+                                                        <option value="5">Virgin Islands (British)</option>
+                                                    </select>
+                                                </div>
+                                            </div>
                                             <input class="form-control" type="text" name=""
                                                 placeholder="State / County">
                                             <input class="form-control" type="text" name="" placeholder="Town / City">
@@ -547,6 +562,175 @@
                                     <span>$300.00</span>
                                 </div>
                                 <a class="theme-btn-s2" href="checkout.html">Proceed To CheckOut</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-prodact">
+                    <h2>You May be Interested in…</h2>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                            <div class="product-item">
+                                <div class="image">
+                                    <img src="assets/images/interest-product/1.png" alt="">
+                                    <div class="tag new">New</div>
+                                    <ul class="cart-wrap">
+                                        <li>
+                                            <a href="cart.html" data-bs-toggle="tooltip" data-bs-html="true"
+                                                title="Add To Cart"><i class="fi flaticon-add-to-cart"></i></a>
+                                        </li>
+                                        <li data-bs-toggle="modal" data-bs-target="#popup-quickview">
+                                            <button data-bs-toggle="tooltip" data-bs-html="true" title="Quick View"><i
+                                                    class="fi flaticon-eye"></i></button>
+                                        </li>
+                                        <li>
+                                            <a href="wishlist.html" data-bs-toggle="tooltip" data-bs-html="true"
+                                                title="Wish List"><i class="fi flaticon-heart"
+                                                    aria-hidden="true"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="text">
+                                    <h2><a href="product-single.html">Wireless Headphones</a></h2>
+                                    <div class="rating-product">
+                                        <i class="fi flaticon-star"></i>
+                                        <i class="fi flaticon-star"></i>
+                                        <i class="fi flaticon-star"></i>
+                                        <i class="fi flaticon-star"></i>
+                                        <i class="fi flaticon-star"></i>
+                                        <span>130</span>
+                                    </div>
+                                    <div class="price">
+                                        <span class="present-price">$120.00</span>
+                                        <del class="old-price">$200.00</del>
+                                    </div>
+                                    <div class="shop-btn">
+                                        <a class="theme-btn-s2" href="product.html">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                            <div class="product-item">
+                                <div class="image">
+                                    <img src="assets/images/interest-product/2.png" alt="">
+                                    <div class="tag sale">Sale</div>
+                                    <ul class="cart-wrap">
+                                        <li>
+                                            <a href="cart.html" data-bs-toggle="tooltip" data-bs-html="true"
+                                                title="Add To Cart"><i class="fi flaticon-add-to-cart"></i></a>
+                                        </li>
+                                        <li data-bs-toggle="modal" data-bs-target="#popup-quickview">
+                                            <button data-bs-toggle="tooltip" data-bs-html="true" title="Quick View"><i
+                                                    class="fi flaticon-eye"></i></button>
+                                        </li>
+                                        <li>
+                                            <a href="wishlist.html" data-bs-toggle="tooltip" data-bs-html="true"
+                                                title="Wish List"><i class="fi flaticon-heart"
+                                                    aria-hidden="true"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="text">
+                                    <h2><a href="product-single.html">Blue Bag with Lock</a></h2>
+                                    <div class="rating-product">
+                                        <i class="fi flaticon-star"></i>
+                                        <i class="fi flaticon-star"></i>
+                                        <i class="fi flaticon-star"></i>
+                                        <i class="fi flaticon-star"></i>
+                                        <i class="fi flaticon-star"></i>
+                                        <span>120</span>
+                                    </div>
+                                    <div class="price">
+                                        <span class="present-price">$160.00</span>
+                                        <del class="old-price">$190.00</del>
+                                    </div>
+                                    <div class="shop-btn">
+                                        <a class="theme-btn-s2" href="product.html">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                            <div class="product-item">
+                                <div class="image">
+                                    <img src="assets/images/interest-product/3.png" alt="">
+                                    <div class="tag new">New</div>
+                                    <ul class="cart-wrap">
+                                        <li>
+                                            <a href="cart.html" data-bs-toggle="tooltip" data-bs-html="true"
+                                                title="Add To Cart"><i class="fi flaticon-add-to-cart"></i></a>
+                                        </li>
+                                        <li data-bs-toggle="modal" data-bs-target="#popup-quickview">
+                                            <button data-bs-toggle="tooltip" data-bs-html="true" title="Quick View"><i
+                                                    class="fi flaticon-eye"></i></button>
+                                        </li>
+                                        <li>
+                                            <a href="wishlist.html" data-bs-toggle="tooltip" data-bs-html="true"
+                                                title="Wish List"><i class="fi flaticon-heart"
+                                                    aria-hidden="true"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="text">
+                                    <h2><a href="product-single.html">Stylish Pink Top</a></h2>
+                                    <div class="rating-product">
+                                        <i class="fi flaticon-star"></i>
+                                        <i class="fi flaticon-star"></i>
+                                        <i class="fi flaticon-star"></i>
+                                        <i class="fi flaticon-star"></i>
+                                        <i class="fi flaticon-star"></i>
+                                        <span>150</span>
+                                    </div>
+                                    <div class="price">
+                                        <span class="present-price">$150.00</span>
+                                        <del class="old-price">$200.00</del>
+                                    </div>
+                                    <div class="shop-btn">
+                                        <a class="theme-btn-s2" href="product.html">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                            <div class="product-item">
+                                <div class="image">
+                                    <img src="assets/images/interest-product/4.png" alt="">
+                                    <div class="tag sale">Sale</div>
+                                    <ul class="cart-wrap">
+                                        <li>
+                                            <a href="cart.html" data-bs-toggle="tooltip" data-bs-html="true"
+                                                title="Add To Cart"><i class="fi flaticon-add-to-cart"></i></a>
+                                        </li>
+                                        <li data-bs-toggle="modal" data-bs-target="#popup-quickview">
+                                            <button data-bs-toggle="tooltip" data-bs-html="true" title="Quick View"><i
+                                                    class="fi flaticon-eye"></i></button>
+                                        </li>
+                                        <li>
+                                            <a href="wishlist.html" data-bs-toggle="tooltip" data-bs-html="true"
+                                                title="Wish List"><i class="fi flaticon-heart"
+                                                    aria-hidden="true"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="text">
+                                    <h2><a href="product-single.html">Brown Com Boots</a></h2>
+                                    <div class="rating-product">
+                                        <i class="fi flaticon-star"></i>
+                                        <i class="fi flaticon-star"></i>
+                                        <i class="fi flaticon-star"></i>
+                                        <i class="fi flaticon-star"></i>
+                                        <i class="fi flaticon-star"></i>
+                                        <span>120</span>
+                                    </div>
+                                    <div class="price">
+                                        <span class="present-price">$120.00</span>
+                                        <del class="old-price">$150.00</del>
+                                    </div>
+                                    <div class="shop-btn">
+                                        <a class="theme-btn-s2" href="product.html">Shop Now</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
