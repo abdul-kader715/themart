@@ -2,11 +2,11 @@ $flaticon_ecommerce-font: "flaticon_ecommerce";
 
 @font-face {
     font-family: $flaticon_ecommerce-font;
-    src: url("./flaticon_ecommerce.ttf?8a177763c22ad28aca876199aeceb5af") format("truetype"),
-url("./flaticon_ecommerce.woff?8a177763c22ad28aca876199aeceb5af") format("woff"),
-url("./flaticon_ecommerce.woff2?8a177763c22ad28aca876199aeceb5af") format("woff2"),
-url("./flaticon_ecommerce.eot?8a177763c22ad28aca876199aeceb5af#iefix") format("embedded-opentype"),
-url("./flaticon_ecommerce.svg?8a177763c22ad28aca876199aeceb5af#flaticon_ecommerce") format("svg");
+    src: url("./flaticon_ecommerce.ttf?eecbba81fbe5199d9a2ca96b28f94f88") format("truetype"),
+url("./flaticon_ecommerce.woff?eecbba81fbe5199d9a2ca96b28f94f88") format("woff"),
+url("./flaticon_ecommerce.woff2?eecbba81fbe5199d9a2ca96b28f94f88") format("woff2"),
+url("./flaticon_ecommerce.eot?eecbba81fbe5199d9a2ca96b28f94f88#iefix") format("embedded-opentype"),
+url("./flaticon_ecommerce.svg?eecbba81fbe5199d9a2ca96b28f94f88#flaticon_ecommerce") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -29,18 +29,23 @@ $flaticon_ecommerce-map: (
     "refresh": "\f106",
     "add-to-cart": "\f107",
     "star": "\f108",
-    "eye": "\f109",
-    "arrow-point-to-right": "\f10a",
-    "right-arrow": "\f10b",
-    "left-arrow": "\f10c",
-    "left-arrow-1": "\f10d",
-    "pin": "\f10e",
-    "mail": "\f10f",
-    "phone": "\f110",
-    "facebook-app-symbol": "\f111",
-    "twitter": "\f112",
-    "instagram": "\f113",
-    "linkedin": "\f114",
+    "arrow-point-to-right": "\f109",
+    "right-arrow": "\f10a",
+    "left-arrow": "\f10b",
+    "left-arrow-1": "\f10c",
+    "pin": "\f10d",
+    "mail": "\f10e",
+    "phone": "\f10f",
+    "facebook-app-symbol": "\f110",
+    "twitter": "\f111",
+    "instagram": "\f112",
+    "linkedin": "\f113",
+    "grid": "\f114",
+    "menu": "\f115",
+    "tick": "\f116",
+    "remove": "\f117",
+    "downward-arrow": "\f118",
+    "coupon": "\f119",
 );
 
 .flaticon-down:before {
@@ -66,9 +71,6 @@ $flaticon_ecommerce-map: (
 }
 .flaticon-star:before {
     content: map-get($flaticon_ecommerce-map, "star");
-}
-.flaticon-eye:before {
-    content: map-get($flaticon_ecommerce-map, "eye");
 }
 .flaticon-arrow-point-to-right:before {
     content: map-get($flaticon_ecommerce-map, "arrow-point-to-right");
@@ -102,4 +104,22 @@ $flaticon_ecommerce-map: (
 }
 .flaticon-linkedin:before {
     content: map-get($flaticon_ecommerce-map, "linkedin");
+}
+.flaticon-grid:before {
+    content: map-get($flaticon_ecommerce-map, "grid");
+}
+.flaticon-menu:before {
+    content: map-get($flaticon_ecommerce-map, "menu");
+}
+.flaticon-tick:before {
+    content: map-get($flaticon_ecommerce-map, "tick");
+}
+.flaticon-remove:before {
+    content: map-get($flaticon_ecommerce-map, "remove");
+}
+.flaticon-downward-arrow:before {
+    content: map-get($flaticon_ecommerce-map, "downward-arrow");
+}
+.flaticon-coupon:before {
+    content: map-get($flaticon_ecommerce-map, "coupon");
 }

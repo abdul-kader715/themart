@@ -117,14 +117,14 @@
 
     // toggle1
     $('#toggle1').on("click", function () {
-        $('.create-account').slideToggle();
-        $('.caupon-wrap.s1').toggleClass('active-border')
+        $('.create-account.s1').slideToggle();
+        $('.caupon-wrap.s1').toggleClass('coupon-1')
     })
 
     // toggle2
     $('#toggle2').on("click", function () {
-        $('.create-account1').slideToggle();
-        $('.caupon-wrap.s2').toggleClass('active-border')
+        $('.create-account.s2').slideToggle();
+        $('.caupon-wrap.s2').toggleClass('coupon-2')
     })
 
     // toggle3
@@ -136,12 +136,13 @@
     // toggle4
     $('#toggle4').on("click", function () {
         $('#open4').slideToggle();
-        $('.caupon-wrap.s4').toggleClass('coupon-4')
+        $('.caupon-wrap.s3').toggleClass('coupon-4')
     })
-    // toggle4
-    $('#toggle4').on("click", function () {
-        $('#open4').slideToggle();
-        $('.caupon-wrap.s3').toggleClass('coupon-2')
+
+    // toggle5
+    $('#toggle5').on("click", function () {
+        $('#open5').slideToggle();
+        $('.caupon-wrap.s5').toggleClass('coupon-5')
     })
 
     $('.payment-select .addToggle').on('click', function () {
@@ -149,8 +150,11 @@
         $('.payment-option').removeClass('active')
     })
 
-
     $('.payment-select .removeToggle').on('click', function () {
+        $('.payment-option').addClass('active')
+        $('.payment-name').removeClass('active')
+    });
+    $('.payment-select .getwayToggle').on('click', function () {
         $('.payment-option').addClass('active')
         $('.payment-name').removeClass('active')
     });

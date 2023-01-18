@@ -1,6 +1,6 @@
 @font-face {
   font-family: "flaticon_ecommerce";
-  src: url("./flaticon_ecommerce.ttf?8a177763c22ad28aca876199aeceb5af") format("truetype"), url("./flaticon_ecommerce.woff?8a177763c22ad28aca876199aeceb5af") format("woff"), url("./flaticon_ecommerce.woff2?8a177763c22ad28aca876199aeceb5af") format("woff2"), url("./flaticon_ecommerce.eot?8a177763c22ad28aca876199aeceb5af#iefix") format("embedded-opentype"), url("./flaticon_ecommerce.svg?8a177763c22ad28aca876199aeceb5af#flaticon_ecommerce") format("svg");
+  src: url("./flaticon_ecommerce.ttf?eecbba81fbe5199d9a2ca96b28f94f88") format("truetype"), url("./flaticon_ecommerce.woff?eecbba81fbe5199d9a2ca96b28f94f88") format("woff"), url("./flaticon_ecommerce.woff2?eecbba81fbe5199d9a2ca96b28f94f88") format("woff2"), url("./flaticon_ecommerce.eot?eecbba81fbe5199d9a2ca96b28f94f88#iefix") format("embedded-opentype"), url("./flaticon_ecommerce.svg?eecbba81fbe5199d9a2ca96b28f94f88#flaticon_ecommerce") format("svg");
 }
 i[class^=flaticon-]:before, i[class*=" flaticon-"]:before {
   font-family: flaticon_ecommerce !important;
@@ -45,50 +45,70 @@ i[class^=flaticon-]:before, i[class*=" flaticon-"]:before {
   content: "\f108";
 }
 
-.flaticon-eye:before {
+.flaticon-arrow-point-to-right:before {
   content: "\f109";
 }
 
-.flaticon-arrow-point-to-right:before {
+.flaticon-right-arrow:before {
   content: "\f10a";
 }
 
-.flaticon-right-arrow:before {
+.flaticon-left-arrow:before {
   content: "\f10b";
 }
 
-.flaticon-left-arrow:before {
+.flaticon-left-arrow-1:before {
   content: "\f10c";
 }
 
-.flaticon-left-arrow-1:before {
+.flaticon-pin:before {
   content: "\f10d";
 }
 
-.flaticon-pin:before {
+.flaticon-mail:before {
   content: "\f10e";
 }
 
-.flaticon-mail:before {
+.flaticon-phone:before {
   content: "\f10f";
 }
 
-.flaticon-phone:before {
+.flaticon-facebook-app-symbol:before {
   content: "\f110";
 }
 
-.flaticon-facebook-app-symbol:before {
+.flaticon-twitter:before {
   content: "\f111";
 }
 
-.flaticon-twitter:before {
+.flaticon-instagram:before {
   content: "\f112";
 }
 
-.flaticon-instagram:before {
+.flaticon-linkedin:before {
   content: "\f113";
 }
 
-.flaticon-linkedin:before {
+.flaticon-grid:before {
   content: "\f114";
+}
+
+.flaticon-menu:before {
+  content: "\f115";
+}
+
+.flaticon-tick:before {
+  content: "\f116";
+}
+
+.flaticon-remove:before {
+  content: "\f117";
+}
+
+.flaticon-downward-arrow:before {
+  content: "\f118";
+}
+
+.flaticon-coupon:before {
+  content: "\f119";
 }/*# sourceMappingURL=flaticon_ecommerce.css.map */

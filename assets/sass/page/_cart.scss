@@ -4,7 +4,6 @@
 
     .cart-wrapper {
 
-
         table {
             @media(max-width:1199px) {
                 width: 1022px;
@@ -16,14 +15,8 @@
                 overflow: scroll;
                 overflow-y: hidden;
             }
-
         }
-
-
     }
-
-
-
 
 
     .cart-wrap th.images {
@@ -267,6 +260,8 @@
             background: linear-gradient(180deg, #FED700 0%, #F78914 100%);
         }
     }
+
+
 
     .sub-total {
         display: flex;
