@@ -58,11 +58,11 @@
                                     <li><a href="tel:869968236"><span>Need help? Call Us:</span>+ +869 968 236</a></li>
                                     <li>
                                         <div class="dropdown">
-                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton2"
                                                 data-bs-toggle="dropdown" aria-expanded="false">
                                                 English
                                             </button>
-                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
                                                 <li><a class="dropdown-item" href="#">English</a></li>
                                                 <li><a class="dropdown-item" href="#">Germany</a></li>
                                                 <li><a class="dropdown-item" href="#">Turki</a></li>
@@ -129,8 +129,8 @@
                                     </li>
                                     <li><a href="#"><i class="fi flaticon-user-profile"></i><span>Login</span></a></li>
                                     <li><a href="#">
-                                            <button class="wish-btn"> <i class="fi flaticon-heart"></i>
-                                                <span class="cart-count">3</span></button>
+                                            <div class="wish-btn"> <i class="fi flaticon-heart"></i>
+                                                <span class="cart-count">3</span></div>
                                         </a>
                                     </li>
                                     <li>
@@ -142,13 +142,11 @@
                                                 <div class="mini-cart-items">
                                                     <div class="mini-cart-item clearfix">
                                                         <div class="mini-cart-item-image">
-                                                            <a href="product.html"><img
-                                                                    src="assets/images/shop/mini-cart/img-1.jpg"
-                                                                    alt></a>
+                                                            <a href="product.html"><img src="assets/images/cart/img-1.jpg" alt></a>
                                                         </div>
                                                         <div class="mini-cart-item-des">
-                                                            <a href="product.html">The Legal Analyst</a>
-                                                            <span class="mini-cart-item-price">$20.15 x 1</span>
+                                                            <a href="product.html">Stylish Pink Coat</a>
+                                                            <span class="mini-cart-item-price">$150 x 1</span>
                                                             <span class="mini-cart-item-quantity"><a href="#"><i
                                                                         class="ti-close"></i></a></span>
                                                         </div>
@@ -156,12 +154,12 @@
                                                     <div class="mini-cart-item clearfix">
                                                         <div class="mini-cart-item-image">
                                                             <a href="product.html"><img
-                                                                    src="assets/images/shop/mini-cart/img-2.jpg"
+                                                                    src="assets/images/cart/img-2.jpg"
                                                                     alt></a>
                                                         </div>
                                                         <div class="mini-cart-item-des">
-                                                            <a href="product.html">Principles and Policies</a>
-                                                            <span class="mini-cart-item-price">$13.25 x 2</span>
+                                                            <a href="product.html">Blue Bag</a>
+                                                            <span class="mini-cart-item-price">$120 x 2</span>
                                                             <span class="mini-cart-item-quantity"><a href="#"><i
                                                                         class="ti-close"></i></a></span>
                                                         </div>
@@ -169,7 +167,7 @@
                                                 </div>
                                                 <div class="mini-cart-action clearfix">
                                                     <span class="mini-checkout-price">Subtotal:
-                                                        <span>$215.14</span></span>
+                                                        <span>$390</span></span>
                                                     <div class="mini-btn">
                                                         <a href="checkout.html" class="view-cart-btn s1">Checkout</a>
                                                         <a href="cart.html" class="view-cart-btn">View Cart</a>
@@ -391,10 +389,10 @@
                                     <div class="col-lg-6">
                                         <div class="caupon-wrap s2">
                                             <div class="coupon coupon-2">
-                                                <label id="toggle2">
-                                                    <p><i class="fi flaticon-user-profile"></i> Returning customer?
-                                                        <span>Click Here to Login</span></p>
-                                                </label>
+                                                <div id="toggle2">
+                                                    <div class="text"><i class="fi flaticon-user-profile"></i> Returning customer?
+                                                        <span>Click Here to Login</span></div>
+                                                </div>
                                             </div>
                                             <div class="create-account s2">
                                                 <span>If you have shopped with us before, please enter your details in
@@ -417,10 +415,10 @@
                                     <div class="col-lg-6">
                                         <div class="caupon-wrap s1">
                                             <div class="coupon coupon-1">
-                                                <label id="toggle1">
-                                                    <p><i class="fi flaticon-coupon"></i>Have a Coupon?<span>Click Here
-                                                            to Enter</span></p>
-                                                </label>
+                                                <div id="toggle1">
+                                                    <div class="text"><i class="fi flaticon-coupon"></i>Have a Coupon?<span>Click Here
+                                                            to Enter</span></div>
+                                                </div>
                                             </div>
                                             <div class="create-account s1">
                                                 <span>If you have coupon code,please apply it</span>
@@ -450,7 +448,7 @@
                                                     </div>
                                                     <div class="col-lg-6 col-md-12 col-12">
                                                         <select name="address" id="Country" class="form-control">
-                                                            <option disabled="" selected="Country">Country*</option>
+                                                            <option disabled="" selected="">Country*</option>
                                                             <option>United State</option>
                                                             <option>Bangladesh</option>
                                                             <option>India</option>
@@ -513,16 +511,16 @@
                                                 <div class="contact-form form-style">
                                                     <div class="row">
                                                         <div class="col-lg-6 col-md-12 col-12">
-                                                            <input type="text" placeholder="First Name*" id="fname1"
+                                                            <input type="text" placeholder="First Name*" id="fname6"
                                                                 name="fname">
                                                         </div>
                                                         <div class="col-lg-6 col-md-12 col-12">
-                                                            <input type="text" placeholder="Last Name*" id="fname2"
+                                                            <input type="text" placeholder="Last Name*" id="fname7"
                                                                 name="fname">
                                                         </div>
                                                         <div class="col-lg-6 col-md-12 col-12">
-                                                            <select name="address" id="Country" class="form-control">
-                                                                <option disabled="" selected="Country">Country*</option>
+                                                            <select name="address" id="Country2" class="form-control">
+                                                                <option disabled="" selected="">Country*</option>
                                                                 <option>United State</option>
                                                                 <option>Bangladesh</option>
                                                                 <option>India</option>
@@ -532,27 +530,27 @@
                                                             </select>
                                                         </div>
                                                         <div class="col-lg-6 col-md-12 col-12">
-                                                            <input type="text" placeholder="City / Town*" id="City"
+                                                            <input type="text" placeholder="City / Town*" id="City1"
                                                                 name="City">
                                                         </div>
                                                         <div class="col-lg-6 col-md-12 col-12">
-                                                            <input type="text" placeholder="Postcode / ZIP*" id="Post2"
+                                                            <input type="text" placeholder="Postcode / ZIP*" id="Post1"
                                                                 name="Post">
                                                         </div>
                                                         <div class="col-lg-6 col-md-12 col-12">
-                                                            <input type="text" placeholder="Company Name*" id="Company"
+                                                            <input type="text" placeholder="Company Name*" id="Company1"
                                                                 name="Company">
                                                         </div>
                                                         <div class="col-lg-6 col-md-12 col-12">
-                                                            <input type="text" placeholder="Email Address*" id="email4"
+                                                            <input type="text" placeholder="Email Address*" id="email5"
                                                                 name="email">
                                                         </div>
                                                         <div class="col-lg-6 col-md-12 col-12">
-                                                            <input type="text" placeholder="Phone*" id="email2"
+                                                            <input type="text" placeholder="Phone*" id="phone1"
                                                                 name="email">
                                                         </div>
                                                         <div class="col-lg-12 col-md-12 col-12">
-                                                            <input type="text" placeholder="Address*" id="Adress"
+                                                            <input type="text" placeholder="Address*" id="Adress1"
                                                                 name="Adress">
                                                         </div>
                                                     </div>
@@ -577,7 +575,7 @@
                                             </div>
                                             <div class="product">
                                                 <ul>
-                                                    <li class="first-cart">Stylish Pink Coat (x1)</li>
+                                                    <li class="first-cart">Stylish Pink(x1)</li>
                                                     <li>
                                                         <div class="rating-product">
                                                             <i class="fi flaticon-star"></i>
@@ -645,7 +643,7 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div id="open5" class="payment-name active">
+                                                    <div id="open6" class="payment-name active">
                                                         <ul>
                                                             <li class="visa"><input id="1" type="radio" name="size"
                                                                     value="30">
@@ -704,9 +702,6 @@
                                         </div>
                                     </div>
                                 </div>
-
-
-
                             </div>
                         </div>
                     </div>
@@ -790,17 +785,17 @@
                                 </div>
                                 <ul class="d-flex">
                                     <li><a href="project-single.html"><img src="assets/images/instragram/1.jpg"
-                                                alt=""></a>
-                                    </li>
+                                                alt=""></a></li>
                                     <li><a href="project-single.html"><img src="assets/images/instragram/2.jpg"
-                                                alt=""></a>
-                                    </li>
-                                    <li><a href="project-single.html"><img src="assets/images/instragram/3.jpg"
-                                                alt=""></a>
-                                    </li>
+                                                alt=""></a></li>
                                     <li><a href="project-single.html"><img src="assets/images/instragram/4.jpg"
-                                                alt=""></a>
-                                    </li>
+                                                alt=""></a></li>
+                                    <li><a href="project-single.html"><img src="assets/images/instragram/3.jpg"
+                                                alt=""></a></li>
+                                    <li><a href="project-single.html"><img src="assets/images/instragram/4.jpg"
+                                                alt=""></a></li>
+                                    <li><a href="project-single.html"><img src="assets/images/instragram/1.jpg"
+                                                alt=""></a></li>
                                 </ul>
                             </div>
                         </div>

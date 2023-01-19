@@ -71,11 +71,11 @@
                                     </li>
                                     <li>
                                         <div class="dropdown">
-                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton2"
                                                 data-bs-toggle="dropdown" aria-expanded="false">
                                                 USD
                                             </button>
-                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
                                                 <li><a class="dropdown-item" href="#">AUD</a></li>
                                                 <li><a class="dropdown-item" href="#">EUR</a></li>
                                                 <li><a class="dropdown-item" href="#">CNY</a></li>
@@ -129,8 +129,8 @@
                                     </li>
                                     <li><a href="#"><i class="fi flaticon-user-profile"></i><span>Login</span></a></li>
                                     <li><a href="#">
-                                            <button class="wish-btn"> <i class="fi flaticon-heart"></i>
-                                                <span class="cart-count">3</span></button>
+                                            <div class="wish-btn"> <i class="fi flaticon-heart"></i>
+                                                <span class="cart-count">3</span></div>
                                         </a>
                                     </li>
                                     <li>
@@ -142,13 +142,11 @@
                                                 <div class="mini-cart-items">
                                                     <div class="mini-cart-item clearfix">
                                                         <div class="mini-cart-item-image">
-                                                            <a href="product.html"><img
-                                                                    src="assets/images/shop/mini-cart/img-1.jpg"
-                                                                    alt></a>
+                                                            <a href="product.html"><img src="assets/images/cart/img-1.jpg" alt></a>
                                                         </div>
                                                         <div class="mini-cart-item-des">
-                                                            <a href="product.html">The Legal Analyst</a>
-                                                            <span class="mini-cart-item-price">$20.15 x 1</span>
+                                                            <a href="product.html">Stylish Pink Coat</a>
+                                                            <span class="mini-cart-item-price">$150 x 1</span>
                                                             <span class="mini-cart-item-quantity"><a href="#"><i
                                                                         class="ti-close"></i></a></span>
                                                         </div>
@@ -156,12 +154,12 @@
                                                     <div class="mini-cart-item clearfix">
                                                         <div class="mini-cart-item-image">
                                                             <a href="product.html"><img
-                                                                    src="assets/images/shop/mini-cart/img-2.jpg"
+                                                                    src="assets/images/cart/img-2.jpg"
                                                                     alt></a>
                                                         </div>
                                                         <div class="mini-cart-item-des">
-                                                            <a href="product.html">Principles and Policies</a>
-                                                            <span class="mini-cart-item-price">$13.25 x 2</span>
+                                                            <a href="product.html">Blue Bag</a>
+                                                            <span class="mini-cart-item-price">$120 x 2</span>
                                                             <span class="mini-cart-item-quantity"><a href="#"><i
                                                                         class="ti-close"></i></a></span>
                                                         </div>
@@ -169,7 +167,7 @@
                                                 </div>
                                                 <div class="mini-cart-action clearfix">
                                                     <span class="mini-checkout-price">Subtotal:
-                                                        <span>$215.14</span></span>
+                                                        <span>$390</span></span>
                                                     <div class="mini-btn">
                                                         <a href="checkout.html" class="view-cart-btn s1">Checkout</a>
                                                         <a href="cart.html" class="view-cart-btn">View Cart</a>
@@ -509,12 +507,13 @@
                                     <h4>Subtotal</h4>
                                     <span>$300.00</span>
                                 </div>
-                                <div class="shopping-option">
-                                    <span>Shopping</span>
+                                <!-- Shipping -->
+                                <div class="shipping-option">
+                                    <span>Shipping</span>
                                     <ul>
                                         <li class="free">
                                             <input id="Free" type="radio" name="color" value="30" checked>
-                                            <label for="Free">Free shopping</label>
+                                            <label for="Free">Free Shipping</label>
                                         </li>
                                         <li class="free">
                                             <input id="Local" type="radio" name="color" value="30">
@@ -522,41 +521,58 @@
                                         </li>
                                         <li class="free">
                                             <span>
-                                                Shopping options will be updated during checkout.
+                                                Shipping options will be updated during checkout.
                                             </span>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="calculate-menu calculate-toggle">
-                                    <span>Calculate Shipping</span> <i class="fi flaticon-down"></i>
-                                    <div class="calculate-item calculate-open-toggle">
-                                        <form action="#">
-                                            <div class="country-name">
-                                                <span>United Kingdom (UK)</span> <i class="fi flaticon-down"></i>
-                                                <div class="country-item">
-                                                    <div class="country-search">
-                                                        <input type="text" class="form-control" placeholder="Search" name="search">
-                                                        <button type="submit"><i class="fi flaticon-search"></i></button>
-                                                    </div>
-                                                    <select name="" id="">
-                                                        <option value="1">United Arab Emirates</option>
-                                                        <option value="2">United Kingdom (UK)</option>
-                                                        <option value="3">Ukraine</option>
-                                                        <option value="4">United States (US)</option>
-                                                        <option value="5">Uzbekistan</option>
-                                                        <option value="5">Virgin Islands (British)</option>
-                                                    </select>
+                                <!-- Start Calculate Shipping -->
+                                <div class="calculate-shipping">
+                                    <h4 class="calculate-shipping-label">Calculate Shipping</h4>
+                                    <i class="fi flaticon-down"></i>
+                                    <form action="#" class="calculate-shipping-form">
+                                        <!-- Country list -->
+                                        <div class="country-list">
+                                            <p class="country-list-label">United Kingdom (UK)</p>
+                                            <i class="fi flaticon-down"></i>
+                                            <div class="countries-wrapper">
+                                                <div class="country-search">
+                                                    <input type="search" class="form-control" placeholder="Search..">
+                                                    <button type="submit"><i class="fi flaticon-search"></i></button>
                                                 </div>
+                                                <ul>
+                                                    <li>United Arab Emirates</li>
+                                                    <li>United Kingdom (UK)</li>
+                                                    <li>Ukraine</li>
+                                                    <li>United States (US)</li>
+                                                    <li>Uzbekistan</li>
+                                                    <li>Virgin Islands (British)</li>
+                                                    <li>United Arab Emirates</li>
+                                                    <li>United Kingdom (UK)</li>
+                                                    <li>Ukraine</li>
+                                                    <li>United States (US)</li>
+                                                    <li>Uzbekistan</li>
+                                                    <li>Virgin Islands (British)</li>
+                                                </ul>
                                             </div>
-                                            <input class="form-control" type="text" name=""
-                                                placeholder="State / County">
-                                            <input class="form-control" type="text" name="" placeholder="Town / City">
-                                            <input class="form-control" type="text" name=""
-                                                placeholder="Postcode / ZIP">
-                                            <a class="theme-btn-s2" href="#">Update</a>
-                                        </form>
-                                    </div>
+                                        </div> <!-- End Country list -->
+
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="State / County">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Town / City">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Postcode / ZIP">
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" class="btn theme-btn-s2">Update</button>
+                                        </div>
+
+                                    </form>
                                 </div>
+                                <!-- End Calculate Shipping -->
                                 <div class="total">
                                     <h4>Total</h4>
                                     <span>$300.00</span>
@@ -814,17 +830,17 @@
                                 </div>
                                 <ul class="d-flex">
                                     <li><a href="project-single.html"><img src="assets/images/instragram/1.jpg"
-                                                alt=""></a>
-                                    </li>
+                                                alt=""></a></li>
                                     <li><a href="project-single.html"><img src="assets/images/instragram/2.jpg"
-                                                alt=""></a>
-                                    </li>
-                                    <li><a href="project-single.html"><img src="assets/images/instragram/3.jpg"
-                                                alt=""></a>
-                                    </li>
+                                                alt=""></a></li>
                                     <li><a href="project-single.html"><img src="assets/images/instragram/4.jpg"
-                                                alt=""></a>
-                                    </li>
+                                                alt=""></a></li>
+                                    <li><a href="project-single.html"><img src="assets/images/instragram/3.jpg"
+                                                alt=""></a></li>
+                                    <li><a href="project-single.html"><img src="assets/images/instragram/4.jpg"
+                                                alt=""></a></li>
+                                    <li><a href="project-single.html"><img src="assets/images/instragram/1.jpg"
+                                                alt=""></a></li>
                                 </ul>
                             </div>
                         </div>

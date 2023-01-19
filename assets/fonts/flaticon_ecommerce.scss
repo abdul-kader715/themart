@@ -2,11 +2,11 @@ $flaticon_ecommerce-font: "flaticon_ecommerce";
 
 @font-face {
     font-family: $flaticon_ecommerce-font;
-    src: url("./flaticon_ecommerce.ttf?eecbba81fbe5199d9a2ca96b28f94f88") format("truetype"),
-url("./flaticon_ecommerce.woff?eecbba81fbe5199d9a2ca96b28f94f88") format("woff"),
-url("./flaticon_ecommerce.woff2?eecbba81fbe5199d9a2ca96b28f94f88") format("woff2"),
-url("./flaticon_ecommerce.eot?eecbba81fbe5199d9a2ca96b28f94f88#iefix") format("embedded-opentype"),
-url("./flaticon_ecommerce.svg?eecbba81fbe5199d9a2ca96b28f94f88#flaticon_ecommerce") format("svg");
+    src: url("./flaticon_ecommerce.ttf?d1a803e835e5e90d6787540e81d21105") format("truetype"),
+url("./flaticon_ecommerce.woff?d1a803e835e5e90d6787540e81d21105") format("woff"),
+url("./flaticon_ecommerce.woff2?d1a803e835e5e90d6787540e81d21105") format("woff2"),
+url("./flaticon_ecommerce.eot?d1a803e835e5e90d6787540e81d21105#iefix") format("embedded-opentype"),
+url("./flaticon_ecommerce.svg?d1a803e835e5e90d6787540e81d21105#flaticon_ecommerce") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -46,6 +46,7 @@ $flaticon_ecommerce-map: (
     "remove": "\f117",
     "downward-arrow": "\f118",
     "coupon": "\f119",
+    "eye": "\f11a",
 );
 
 .flaticon-down:before {
@@ -122,4 +123,7 @@ $flaticon_ecommerce-map: (
 }
 .flaticon-coupon:before {
     content: map-get($flaticon_ecommerce-map, "coupon");
+}
+.flaticon-eye:before {
+    content: map-get($flaticon_ecommerce-map, "eye");
 }

@@ -115,7 +115,7 @@
     }
   }
 
-  .coupon label {
+  .coupon #toggle1,#toggle2 {
     margin-bottom: 0;
     font-weight: 500;
     font-size: 18px;
@@ -130,7 +130,7 @@
       font-size: 15px;
     }
 
-    p {
+    .text{
       font-weight: 600;
       font-size: 18px;
       line-height: 18px;
@@ -297,6 +297,10 @@
   .payment-select {
     padding: 40px 0;
     padding-top: 0;
+
+    ul {
+      transition: all .3s;
+    }
   }
 
   .biling-item-2 {
@@ -400,6 +404,10 @@
     font-size: 18px;
   }
 
+  .payment-name.active {
+    transition: all .3s ease-in-out;
+  }
+
   .payment-name ul li input {
     margin-right: 0;
     position: absolute;
@@ -413,6 +421,7 @@
   .payment-name label {
     width: 100%;
     border: 1px solid transparent;
+    transition: all .3s;
   }
 
   .payment-name .visa label {
@@ -434,6 +443,7 @@
   .payment-option {
     padding: 30px;
     border: 1px solid #D9D9D9;
+
     h3 {
       position: relative;
       text-align: center;
@@ -442,7 +452,7 @@
       font-size: 25px;
       border-bottom: 2px solid #F1E2CC;
       padding-bottom: 15px;
-  
+
       &::before {
         position: absolute;
         content: "";
