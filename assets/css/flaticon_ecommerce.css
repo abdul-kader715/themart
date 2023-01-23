@@ -1,10 +1,10 @@
 @font-face {
     font-family: "flaticon_ecommerce";
-    src: url("../fonts/flaticon_ecommerce.ttf?d1a803e835e5e90d6787540e81d21105") format("truetype"),
-url("../fonts/flaticon_ecommerce.woff?d1a803e835e5e90d6787540e81d21105") format("woff"),
-url("../fonts/flaticon_ecommerce.woff2?d1a803e835e5e90d6787540e81d21105") format("woff2"),
-url("../fonts/flaticon_ecommerce.eot?d1a803e835e5e90d6787540e81d21105#iefix") format("embedded-opentype"),
-url("../fonts/flaticon_ecommerce.svg?d1a803e835e5e90d6787540e81d21105#flaticon_ecommerce") format("svg");
+    src: url("../fonts/flaticon_ecommerce.ttf?cf9c35ed7fabfc0c1f6c1de270d8ffb8") format("truetype"),
+url("../fonts/flaticon_ecommerce.woff?cf9c35ed7fabfc0c1f6c1de270d8ffb8") format("woff"),
+url("../fonts/flaticon_ecommerce.woff2?cf9c35ed7fabfc0c1f6c1de270d8ffb8") format("woff2"),
+url("../fonts/flaticon_ecommerce.eot?cf9c35ed7fabfc0c1f6c1de270d8ffb8#iefix") format("embedded-opentype"),
+url("../fonts/flaticon_ecommerce.svg?cf9c35ed7fabfc0c1f6c1de270d8ffb8#flaticon_ecommerce") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -95,4 +95,7 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 }
 .flaticon-eye:before {
     content: "\f11a";
+}
+.flaticon-quote:before {
+    content: "\f11b";
 }

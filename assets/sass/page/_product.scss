@@ -140,8 +140,9 @@
     .shop-filter-wrap {
 
         @media(min-width:992px) {
-           padding-right: 30px;
+            padding-right: 30px;
         }
+
         @media(max-width:991px) {
             margin-bottom: 50px;
         }
@@ -240,6 +241,12 @@
 
         }
 
+        &.s2 {
+            @media(min-width:992px) {
+                padding-right: 0;
+                padding-left: 30px;
+            }
+        }
 
         /*** category-widget ***/
         .category-widget {
@@ -551,26 +558,31 @@ input[type=radio]:checked+.topcoat-radio-button:after {
         display: flex;
         align-items: center;
         padding: 10px;
+
         @media (max-width:575px) {
-           display: block;
-           margin: 0 50px;
-           margin-bottom: 30px;
+            display: block;
+            margin: 0 50px;
+            margin-bottom: 30px;
         }
+
         @media (max-width:399px) {
-           margin: 0;
-           margin-bottom: 30px;
+            margin: 0;
+            margin-bottom: 30px;
         }
+
         .image {
             width: calc(100% - 100px);
 
             @media (max-width:991px) {
                 width: calc(100% - 380px);
             }
+
             @media (max-width:767px) {
                 width: calc(100% - 100px);
             }
+
             @media (max-width:575px) {
-                width:100% ;
+                width: 100%;
             }
         }
 
@@ -578,11 +590,13 @@ input[type=radio]:checked+.topcoat-radio-button:after {
             text-align: left;
             padding-top: 0;
             margin-left: 5px;
+
             @media (max-width:575px) {
                 text-align: center;
                 margin-left: 0;
                 padding-top: 20px;
-             }
+            }
+
             .price {
                 padding-bottom: 15px;
             }
@@ -593,10 +607,160 @@ input[type=radio]:checked+.topcoat-radio-button:after {
                 line-height: 25px;
                 color: $text-color;
                 margin-bottom: 0;
+
                 @media (max-width:575px) {
                     padding-bottom: 10px;
-                 }
+                }
             }
         }
+    }
+}
+
+.deals-area {
+
+
+    .offer-wrap {
+        justify-content: center;
+        height: auto;
+        display: block;
+        position: relative;
+        background: #f9f9f9;
+        height: 410px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        margin-bottom: 30px;
+        @media (max-width:1199px) {
+            height: 370px;
+        } 
+        @media (max-width:399px) {
+            height: 300px;
+        } 
+        .image {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            @media (max-width:767px) {
+                top: -80px;
+            } 
+            @media (max-width:575px) {
+                top: -40px;
+            } 
+            @media (max-width:399px) {
+                top: 0;
+            } 
+           
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .content {
+            text-align: center;
+            margin-left: 0;
+            padding: 60px 20px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            h2 {
+                font-size: 35px;
+            }
+
+            .offer-price {
+                font-size: 20px;
+                line-height: 30px;
+            }
+
+            del {
+                font-size: 20px;
+                line-height: 30px;
+                color: $heading-color;
+            }
+
+            .count-up {
+                margin-top: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: auto;
+
+                @media (max-width:991px) {
+                    width: 350px;
+                }
+
+                @media (max-width:767px) {
+                    width: 100%;
+                }
+
+                @media (max-width:425px) {
+                    width: 275px;
+                }
+                #clock, #clock-s3, #clock-s4 {
+                    @media (max-width:1199px) {
+                        width: auto;
+                    } 
+                }
+
+
+                .box {
+                    width: 65px;
+                    height: 65px;
+                    border: 1px solid transparent;
+                    font-family: $heading-font;
+                    font-weight: 400;
+                    color: $heading-color;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    transition: all .4s ease-in-out;
+                    font-size: 23px;
+                    line-height: 29px;
+                    background: $white;
+
+
+
+                    @media (max-width:992px) {
+                        width: 60px;
+                        height: 60px;
+                        margin-right: 10px;
+                    }
+
+                    @media (max-width:425px) {
+                        width: 60px;
+                        height: 50px;
+                        margin-right: 5px;
+                        font-size: 20px;
+                    }
+
+                    .time {
+                        line-height: 10px;
+                        margin-top: 15px;
+                    }
+
+                    span {
+                        margin-top: 9px;
+                        text-align: center;
+                        color: $heading-color;
+                        font-family: $base-font;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 19px;
+                    }
+
+
+                }
+
+            }
+        }
+    }
+    .all-deals-btn{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 80px;
     }
 }

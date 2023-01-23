@@ -610,6 +610,31 @@
         });
     }
 
+     /*------------------------------------------
+        = Header shopping wishlist toggle
+    -------------------------------------------*/
+    if($(".header-wishlist-form-wrapper").length) {
+        var wishlistToggleBtn = $(".wishlist-toggle-btn");
+        var wishlistContent = $(".mini-wislist-content");
+        var wishlistCloseBtn = $(".mini-cart-close");
+        var body = $("body");
+
+        wishlistToggleBtn.on("click", function(e) {
+            wishlistContent.toggleClass("mini-wislist-content-toggle");
+            e.stopPropagation();
+        });
+
+        wishlistCloseBtn.on("click", function(e) {
+            wishlistContent.removeClass("mini-wislist-content-toggle");
+            e.stopPropagation();
+        });
+
+        body.on("click", function() {
+            wishlistContent.removeClass("mini-wislist-content-toggle");
+        }).find(wishlistContent).on("click", function(e) {
+            e.stopPropagation();
+        });
+    }
 
     /*------------------------------------------
         = Header shopping cart toggle
@@ -636,6 +661,7 @@
             e.stopPropagation();
         });
     }
+
 
     /*------------------------------------------
         = Header shopping catagory toggle
@@ -756,6 +782,7 @@
             }
         });
     }
+
     /*------------------------------------------
         = Trendin Slider
     -------------------------------------------*/
@@ -884,7 +911,31 @@
             = COUNTDOWN CLOCK TWO
     -------------------------------------------*/
     if ($("#clock-s2").length) {
-        $('#clock-s2').countdown('2023/03/03', function (event) {
+        $('#clock-s2').countdown('2023/08/03', function (event) {
+            var $this = $(this).html(event.strftime('' +
+                '<div class="box"><div><div class="time">%D</div> <span>Days</span> </div></div>' +
+                '<div class="box"><div><div class="time">%H</div> <span>Hours</span> </div></div>' +
+                '<div class="box"><div><div class="time">%M</div> <span>Mins</span> </div></div>' +
+                '<div class="box"><div><div class="time">%S</div> <span>Secs</span> </div></div>'));
+        });
+    }
+    /*------------------------------------------
+            = COUNTDOWN CLOCK 3
+    -------------------------------------------*/
+    if ($("#clock-s3").length) {
+        $('#clock-s3').countdown('2023/06/03', function (event) {
+            var $this = $(this).html(event.strftime('' +
+                '<div class="box"><div><div class="time">%D</div> <span>Days</span> </div></div>' +
+                '<div class="box"><div><div class="time">%H</div> <span>Hours</span> </div></div>' +
+                '<div class="box"><div><div class="time">%M</div> <span>Mins</span> </div></div>' +
+                '<div class="box"><div><div class="time">%S</div> <span>Secs</span> </div></div>'));
+        });
+    }
+    /*------------------------------------------
+            = COUNTDOWN CLOCK 4
+    -------------------------------------------*/
+    if ($("#clock-s4").length) {
+        $('#clock-s4').countdown('2023/05/03', function (event) {
             var $this = $(this).html(event.strftime('' +
                 '<div class="box"><div><div class="time">%D</div> <span>Days</span> </div></div>' +
                 '<div class="box"><div><div class="time">%H</div> <span>Hours</span> </div></div>' +
@@ -959,7 +1010,13 @@
 
                 email: "required",
 
-                phone: "required",
+                adress: "required",
+
+                name: "required",
+
+                service: "required",
+
+                note: "required",
 
                 subject: {
                     required: true
@@ -971,8 +1028,9 @@
             messages: {
                 name: "Please enter your name",
                 email: "Please enter your email address",
-                phone: "Please enter your phone number",
-                subject: "Please select your contact subject"
+                adress: "Please enter your adress",
+                service: "Please select your contact service",
+                note: "Please enter your comment"
             },
 
             submitHandler: function (form) {

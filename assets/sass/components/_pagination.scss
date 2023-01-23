@@ -60,6 +60,14 @@
 			font-size: calc-rem-value(15);
 		}
 	}
+	&.s2{
+		margin-top: 20px;
+		text-align: left;
+		@media (max-width:991px) {
+			margin-bottom: 30px;
+			text-align: center;
+		}
+	}
 }
 
 .pagination-wrapper-left {

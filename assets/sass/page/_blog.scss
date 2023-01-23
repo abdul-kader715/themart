@@ -1,6 +1,5 @@
-
 /*--------------------------------------------------------------
-15. wpo-blog-pg-section
+10. wpo-blog-pg-section
 --------------------------------------------------------------*/
 .wpo-blog-pg-section {
 	.wpo-blog-content {
@@ -100,25 +99,23 @@
 	.post {
 		h3 {
 			font-size: 34px;
-			font-size: calc-rem-value(34);
 			line-height: 1.2em;
-			font-weight: 700;
+			font-weight: 600;
 			margin: -0.27em 0 0.7em;
 			font-family: $heading-font;
 
 			@include media-query(991px) {
 				font-size: 25px;
-				font-size: calc-rem-value(25);
 			}
 
 			@include media-query(767px) {
 				font-size: 22px;
-				font-size: calc-rem-value(22);
 			}
 		}
 
 		h3 a {
 			color: $heading-color;
+			text-transform: capitalize;
 		}
 
 		h3 a:hover {
@@ -170,8 +167,8 @@
 			position: absolute;
 			right: 20px;
     		top: 10px;
-			content: "\f10a";
-			font-family: "flaticon";
+			content: "\f11b";
+			font-family: flaticon_ecommerce !important;
 			font-size: 90px;
 			line-height: 80px;
 			color: #e5f0fb;
