@@ -103,6 +103,7 @@ Version:        1.0.0
 
 
 @import "page/product";
+
 @import "page/product-single";
 
 @import "page/wishlist";
@@ -113,13 +114,21 @@ Version:        1.0.0
 
 @import "page/compare";
 
+@import "page/order";
+
+@import "page/vendor";
 
 @import "page/_blog";
 
 @import "page/_blog-single";
 
+@import "page/faq";
+
+@import "page/auth-page";
 
 @import "page/contact";
+
+@import "page/error-404";
 
 
 
